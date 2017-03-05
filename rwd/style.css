@@ -1,0 +1,666 @@
+                        html, body {
+                            margin: 0;
+                            padding: 0;
+                            height: 100%;
+                            font-size: 10pt;
+                            line-height: 20pt;
+                            overflow-x: hidden;
+                        }
+
+                        body * {
+                            font-family: 'PT Sans', sans-serif;
+                            color: #fff;
+                            transition: linear .3s;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            border-bottom: 2px solid transparent;
+                        }
+
+                        button {
+                            border: none;
+                            background: #50c3af;
+                            border-radius: 25px;
+                        }
+
+                        button:hover, button:focus {
+                            cursor: pointer;
+                            background: #45a897;
+                            box-shadow: 0 0 10px #171717;
+                        }
+
+                        p {
+                            margin: 0;
+                            color: #787b80;
+                        }
+
+                        h2 {
+                            color: #384048;
+                            font-weight: 700;
+                            font-size: 1.2rem;
+                            margin: 0;
+                            text-transform: uppercase;
+                        }
+
+                        h2:after {
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            background: #e2e3e4;
+                        }
+
+                        .readMoreButton {
+                            width: 98px;
+                            height: 35px;
+                        }
+
+                        .menu {
+                            display: none;
+                        }
+
+                        .navigation {
+                            width: 0;
+                            overflow: hidden;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            transition: width 0.3s linear;
+                            background: #f5f5f5;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        .mainPage {
+                            width: 100%;
+                            float: right;
+                        }
+
+                        .mainContent {
+                            height: auto;
+                            min-height: 100%;
+                        }
+
+                        .wrapper {
+                            position: relative;
+                            height: 100%;
+                            width: 590px;
+                            box-sizing: border-box;
+                            margin: 0 auto;
+                        }
+
+                        header {
+                            padding-top: 64px;
+                            background: url('images/background.png') no-repeat;
+                            background-size: cover;
+                            height: 590px;
+                            box-sizing: border-box;
+                        }
+
+                        header img {
+                            display: block;
+                            margin: auto;
+                        }
+
+                        header nav {
+                            display: -webkit-box;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            justify-content: space-around;
+                            width: 390px;
+                            height: auto;
+                            margin: 50px auto 0;
+                        }
+
+                        header nav a {
+                            text-transform: uppercase;
+                            margin: auto;
+                            font-size: 1.3rem;
+                        }
+
+                        header nav a:hover, header nav a:focus {
+                            border-color: #fff;
+                        }
+
+                        h1 {
+                            font-family: 'Ubuntu', sans-serif;
+                            font-size: 4.5rem;
+                            text-transform: uppercase;
+                            text-align: center;
+                            margin: 80px 0 0;
+                        }
+
+                        header h2 {
+                            display: inline-block;
+                            font-size: 1.3rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            margin: 60px 0;
+                            text-align: center;
+                            width: 100%;
+                            color: #fff;
+                        }
+
+                        header h2:before, header h2:after {
+                            content: '';
+                            display: inline-block;
+                            height: 2px;
+                            width: 100px;
+                            background: rgba(198, 198, 198, 0.65);
+                            vertical-align: middle;
+                        }
+
+                        header h2:before {
+                            margin-right: 32px;
+                        }
+
+                        header h2:after {
+                            margin-left: 32px;
+                        }
+
+                        header button {
+                            font-size: 1.3rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            position: absolute;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            height: 48px;
+                            width: 235px;
+                            margin-bottom: 120px
+                        }
+
+                        main {
+                            padding-bottom: -57px;
+                        }
+
+                        figure {
+                            margin: 0 0 20px;
+                            width: auto;
+                            height: auto;
+                        }
+
+                        figure img {
+                            margin-bottom: 20px;
+                        }
+
+                        figcaption h2:after {
+                            width: 100%;
+                            margin: 15px 0 18px;
+                        }
+
+                        .benefitsBlock {
+                            height: 286px;
+                            background: #eeeeef;
+                        }
+
+                        .flexContainer {
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .benefit {
+                            width: 180px;
+                            height: 180px;
+                            margin: auto;
+                        }
+
+                        .benefit h2 {
+                            text-align: center;
+                        }
+
+                        .benefit h2 span {
+                            display: block;
+                            text-align: center;
+                            color: #50c3af;
+                            margin-bottom: 20px;
+                        }
+
+                        .benefit h2:after {
+                            width: 135px;
+                            margin: 15px auto;
+                        }
+
+                        .benefit p {
+                            text-align: center;
+                        }
+
+                        .featuresBlock {
+                            height: 526px;
+                            background: #f5f5f5;
+                        }
+
+                        .feature {
+                            width: 264px;
+                            height: 364px;
+                            margin: auto;
+                        }
+
+                        .supportBlock {
+                            height: 328px;
+                            background: #eeeeef;
+                        }
+
+                        .supportBlock .support {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+
+                        .supportBlock h2, .feedback h2, .backstagePreview h2 {
+                            font-size: 1.4rem;
+                        }
+
+                        .supportBlock h2 span, .feedback h2 span {
+                            color: #d2d5da;
+                            margin: 0 15px 0 8px;
+                        }
+
+                        .supportBlock h2:after, .feedback h2:after, .backstagePreview h2:after {
+                            margin: 20px 0;
+                        }
+
+                        .supportBlock .support p {
+                            margin-bottom: 36px;
+                        }
+
+                        .support .readMoreButton, .backstagePreview .readMoreButton {
+                            background: #d2d5da;
+                        }
+
+                        .extentionsBlock {
+                            height: 441px;
+                            background: #f5f5f5;
+                        }
+
+                        .extention {
+                            width: 181px;
+                            height: 325px;
+                            margin: auto;
+                        }
+
+                        .extention .checkOut {
+                            color: #50c3af;
+                        }
+
+                        .extention .checkOut:after {
+                            content: ' > ';
+                            color: #50c3af;
+                        }
+
+                        .feedbackBlock {
+                            height: 321px;
+                            background: #eeeeef;
+                        }
+
+                        .feedback {
+                            width: 265px;
+                            height: 200px;
+                            margin: auto;
+                        }
+
+                        .feedback p {
+                            margin-bottom: 30px;
+                        }
+
+                        .backstageBlock {
+                            height: 331px;
+                            background: #f5f5f5;
+                        }
+
+                        .backstageBlock img {
+                            margin: auto;
+                        }
+
+                        .backstagePreview {
+                            width: 295px;
+                            height: 208px;
+                            margin: auto;
+                        }
+
+                        .backstagePreview p {
+                            margin-bottom: 20px;
+                        }
+
+                        .clientsBlock {
+                            height: 278px;
+                            background: #50c3af;
+                            padding-bottom: 57px;
+                            box-sizing: border-box;
+                        }
+
+                        .clientsBlock .clients {
+                            width: 100%;
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+
+                        .clients h2 {
+                            display: inline-block;
+                            position: relative;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            color: #fff;
+                        }
+
+                        .clients h2 span {
+                            color: #d2d5da;
+                            margin: 0 15px 0 0;
+                            opacity: 0.5;
+                        }
+
+                        .clients h2:after {
+                            margin: 20px 0 40px;
+                            opacity: 0.5;
+                        }
+
+                        .clientsComponies {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        .clientsComponies a {
+                            margin: auto;
+                            border: 2px solid transparent;
+                            padding: 10px 10px 0;
+                            border-radius: 10px;
+                        }
+
+                        .clientsComponies a:hover, .clientsComponies a:focus {
+                            margin: auto;
+                            border-color: rgba(255, 255, 255, 0.5);
+                        }
+
+                        footer {
+                            height: 57px;
+                            margin-top: -57px;
+                            background: #f5f5f5;
+                        }
+
+                        footer .wrapper:before {
+                            content: '';
+                            display: inline-block;
+                            height: 100%;
+                            vertical-align: middle;
+                        }
+
+                        footer p {
+                            margin: 0 9px;
+                            display: inline-block;
+                            color: #aaacaf;
+                            vertical-align: middle;
+                            font-size: 1.3rem;
+                        }
+
+                        footer .brand {
+                            font-family: 'PT Sans', sans-serif;
+                            color: #787b80;
+                        }
+
+                        footer .brand:after {
+                            font: normal normal normal 14px/1 FontAwesome;
+                            content: '\f1f9';
+                            padding: 2px;
+                        }
+
+                        footer a {
+                            color: #aaacaf;
+                        }
+
+                        footer a:hover, footer a:focus {
+                            border-color: #aaacaf;
+                        }
+
+                        footer a:before {
+                            content: ' - ';
+                        }
+
+                        footer .social {
+                            position: absolute;
+                            display: inline-block;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+
+                        footer .social a {
+                            margin: 0 7px;
+                            border: 0;
+                        }
+
+                        footer .social a:hover, footer .social a:focus {
+                            color: #000;
+                        }
+
+                        @media (max-width:1080px) {
+                            main *, footer * {
+                                font-size: 30pt;
+                                line-height: 30pt;
+                            }
+                            .menu {
+                                display: inline-block;
+                                float: left;
+                                padding: 10px;
+                            }
+                            #mainNavigation:target {
+                                width: 30%;
+                                z-index: 5;
+                            }
+                            .navigation .closeNav {
+                                display: inline-block;
+                                height: auto;
+                                width: 100%;
+                            }
+                            .navigation .closeNav span {
+                                color: #16191c;
+                                padding-top: 75px;
+                                padding-left: 40px;
+                            }
+                            .navigation ul {
+                                list-style: none;
+                                padding: 0;
+                            }
+                            .navigation li a {
+                                display: inline-block;
+                                padding: 50px;
+                                font-size: 4rem;
+                                color: #50c3af;
+                            }
+                            .navigation li a:focus {
+                                color: #16191c;
+                            }
+                            main .wrapper {
+                                width: 100%;
+                                padding: 20px 0;
+                                height: auto;
+                            }
+                            main .wrapper h2 {
+                                font-size: 4rem;
+                                line-height: 32pt;
+                            }
+                            header nav {
+                                display: none;
+                            }
+                            h1 {
+                                font-size: 5rem;
+                                line-height: 4rem;
+                            }
+                            header h2 {
+                                font-size: 1.5rem;
+                                margin: 30px 0;
+                            }
+                            header button {
+                                height: 100px;
+                                width: 400px;
+                                font-size: 2.5rem;
+                                margin: 20px 0;
+                            }
+                            figure img {
+                                width: 360px;
+                            }
+                            .readMoreButton {
+                                width: 250px;
+                                height: 80px;
+                            }
+                            .benefitsBlock, .featuresBlock, .supportBlock, .extentionsBlock, .feedbackBlock, .backstageBlock {
+                                padding: 20px 0;
+                                height: auto;
+                            }
+                            .benefitsBlock .flexContainer {
+                                flex-direction: column;
+                            }
+                            .benefit {
+                                width: 100%;
+                                height: auto;
+                                margin: 10px 0;
+                            }
+                            .supportBlock .support {
+                                position: static;
+                                transform: none;
+                                padding: 0 20px;
+                            }
+                            .support p {
+                                margin: 0 10px;
+                            }
+                            .extention {
+                                width: auto;
+                                height: auto;
+                                padding: 0 30px;
+                            }
+                            .extention img {
+                                width: 400px;
+                                margin: 50px 0;
+                            }
+                            .extentionsBlock .flexContainer {
+                                flex-direction: column;
+                            }
+                            .extention p {
+                                margin-bottom: 40px;
+                            }
+                            .extention .checkOut {
+                                font-size: 6rem;
+                                margin-left: 20px;
+                            }
+                            .feature {
+                                height: auto;
+                                width: 350px;
+                            }
+                            .feedback {
+                                height: auto;
+                                width: auto;
+                                padding: 0 20px;
+                            }
+                            .backstageBlock .backstagePreview {
+                                width: 500px;
+                                height: auto;
+                            }
+                            .backstageBlock img {
+                                width: 400px;
+                            }
+                            .clientsBlock .clients {
+                                position: static;
+                                transform: none;
+                            }
+                            .clientsComponies a img {
+                                height: 40px;
+                            }
+                            .clientsBlock {
+                                height: auto;
+                            }
+                            footer .wrapper {
+                                width: 100%;
+                            }
+                            footer .social {
+                                padding-right: 20px;
+                            }
+                        }
+
+                        @media (max-width:968px) {
+                            #mainNavigation:target {
+                                width: 40%;
+                            }
+                            main .clientsBlock h2 {
+                                font-size: 3rem;
+                            }
+                            .clientsBlock .clientsComponies {
+                                flex-direction: column;
+                            }
+                            footer a {
+                                font-size: 20pt;
+                            }
+                        }
+
+                        @media (max-width:768px) {
+                            #mainNavigation:target {
+                                width: 40%;
+                            }
+                            .flexContainer {
+                                flex-direction: column;
+                            }
+                            .feature img {
+                                width: 400px;
+                            }
+                            .feature, .feedback {
+                                width: auto;
+                                padding: 20px;
+                            }
+                            .backstageBlock img {
+                                margin-bottom: 20px;
+                            }
+                        }
+
+                        @media (max-width:720px) {
+                            header .wrapper {
+                                width: 490px;
+                            }
+                            header h2:before, header h2:after {
+                                width: 50px;
+                            }
+                            main h2 {
+                                padding-left: 10px;
+                            }
+                            main .clientsBlock h2 {
+                                font-size: 2rem;
+                            }
+                            footer {
+                                height: auto;
+                            }
+                            footer a {
+                                display: block;
+                            }
+                            footer .social a {
+                                font-size: 6rem;
+                            }
+                            .extention .checkOut {
+                                font-size: 4rem;
+                            }
+                        }
+
+                        @media (max-width:590px) {
+                            #mainNavigation:target {
+                                width: 100%;
+                            }
+                            header .wrapper {
+                                width: 390px;
+                            }
+                            header h2 {
+                                margin-bottom: 20px;
+                            }
+                            header h2:before, header h2:after {
+                                margin: 0;
+                            }
+                            footer .social {
+                                position: static;
+                                transform: none;
+                                display: flex;
+                                justify-content: space-around;
+                                height: 80px;
+                                width: 100%;
+                                padding: 20px 0 0;
+                            }
+                        }
